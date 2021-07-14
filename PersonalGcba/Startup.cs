@@ -28,8 +28,7 @@ namespace PersonalGcba
         {
             services.AddControllersWithViews();
             services.AddDbContext<PersonalGcbaContext>(
-                options => options.UseSqlServer("name=ConnectionStrings:PersonalGcbaConnection")
-            );
+                options => options.UseLazyLoadingProxies().UseSqlServer(Configuration.GetConnectionString("PersonalGcbaConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

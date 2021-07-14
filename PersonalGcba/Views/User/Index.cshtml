@@ -54,28 +54,28 @@
                     {
                     <tr>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Id)
+                            @item.Id
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Nombre)
+                            @item.Nombre
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Apellido)
+                            @item.Apellido
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Dni)
+                            @item.Dni
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.FechaNacimiento)
+                            @item.FechaNacimiento
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Desarrollador)
+                            @item.Desarrollador
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Descripcion)
+                            @item.Descripcion
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.IdArea)
+                            @item.IdAreaNavigation.NombreArea
                         </td>
                         <td>
                             <a href="@Url.Action("Update","User",new {id=item.Id})"><i class="fas fa-user-edit" style="font-size: 18px;"></i></a>

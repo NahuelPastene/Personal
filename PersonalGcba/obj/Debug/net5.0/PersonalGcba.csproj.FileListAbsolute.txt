@@ -71,3 +71,5 @@ C:\Users\nahue\Desktop\Terciario\Clases .NET\PersonalGcba\Personal\PersonalGcba\
 C:\Users\nahue\Desktop\Terciario\Clases .NET\PersonalGcba\Personal\PersonalGcba\obj\Debug\net5.0\Razor\Views\User\Create.cshtml.g.cs
 C:\Users\nahue\Desktop\Terciario\Clases .NET\PersonalGcba\Personal\PersonalGcba\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
 C:\Users\nahue\Desktop\Terciario\Clases .NET\PersonalGcba\Personal\PersonalGcba\obj\Debug\net5.0\Razor\Views\User\Update.cshtml.g.cs
+C:\Users\nahue\Desktop\Terciario\Clases .NET\PersonalGcba\Personal\PersonalGcba\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\nahue\Desktop\Terciario\Clases .NET\PersonalGcba\Personal\PersonalGcba\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs

@@ -22,10 +22,6 @@ namespace PersonalGcba.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            {
-               optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=PersonalGcba;Trusted_Connection=True");
-            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

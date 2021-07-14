@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using PersonalGcba.Models;
+using PersonalGcba.Repository;
 
 namespace PersonalGcba
 {
@@ -25,7 +27,7 @@ namespace PersonalGcba
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<DbContext>(
+            services.AddDbContext<PersonalGcbaContext>(
                 options => options.UseSqlServer("name=ConnectionStrings:PersonalGcbaConnection")
             );
         }
@@ -40,10 +42,9 @@ namespace PersonalGcba
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
             }
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();

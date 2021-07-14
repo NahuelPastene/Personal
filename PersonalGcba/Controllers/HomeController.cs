@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PersonalGcba.Models;
+using PersonalGcba.Repository;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,21 +12,16 @@ namespace PersonalGcba.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly UserRepository _userRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(PersonalGcbaContext context)
         {
-            _logger = logger;
+            _userRepository = new UserRepository(context);
         }
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
+            return RedirectToAction("Index", "User");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
